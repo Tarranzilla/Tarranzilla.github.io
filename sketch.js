@@ -10,6 +10,9 @@ let pannel1;
 let pannel2;
 //let pannel3;
 
+let sub0_btn0;
+let sub0_btn1;
+
 
 let bolhas = [];
 class Bolha {
@@ -90,6 +93,9 @@ pannel0 = select("#infoPannel0");
 pannel1 = select("#infoPannel1");
 pannel2 = select("#infoPannel2");
 //pannel3 = select("#infoPannel3");
+
+sub0_btn0 = select("#sub0_btn0");
+sub0_btn1 = select("#sub0_btn1");
 
 botao0.mousePressed(irSou);
 botao1.mousePressed(irFaco);
