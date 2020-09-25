@@ -49,32 +49,32 @@ class Bolha {
   }
 }
 
-function irArte () {
+function irSou () {
   pannel0.style("display", "block");
   pannel1.style("display", "none");
   pannel2.style("display", "none");
-  pannel3.style("display", "none");
+  //pannel3.style("display", "none");
 }
 
-function irPesq () {
+function irFaco () {
   pannel0.style("display", "none");
   pannel1.style("display", "block");
   pannel2.style("display", "none");
-  pannel3.style("display", "none");
+  //pannel3.style("display", "none");
 }
 
-function irDesign () {
+function irCont () {
   pannel0.style("display", "none");
   pannel1.style("display", "none");
   pannel2.style("display", "block");
-  pannel3.style("display", "none");
+  //pannel3.style("display", "none");
 }
 
 function irContato () {
   pannel0.style("display", "none");
   pannel1.style("display", "none");
   pannel2.style("display", "none");
-  pannel3.style("display", "block");
+  //pannel3.style("display", "block");
 }
 
 function setup() {
@@ -91,9 +91,9 @@ pannel1 = select("#infoPannel1");
 pannel2 = select("#infoPannel2");
 //pannel3 = select("#infoPannel3");
 
-botao0.mousePressed(irArte);
-botao1.mousePressed(irPesq);
-botao2.mousePressed(irDesign);
+botao0.mousePressed(irSou);
+botao1.mousePressed(irFaco);
+botao2.mousePressed(irCont);
 //botao3.mousePressed(irContato);
 
 for (let i = 0; i < 13; i++) {
