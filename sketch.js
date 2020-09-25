@@ -1,31 +1,15 @@
+let canvas;
 
-let  subTitulos = [];
+let botao0;
+let botao1;
+let botao2;
+let botao3;
 
-var subMenu0;
-var subMenu1;
-var subMenu2;
-var subMenu3;
-var subMenu3;
+let pannel0;
+let pannel1;
+let pannel2;
+let pannel3;
 
-var anteRior0;
-var proXimo0;
-var anteRior1;
-var proXimo1;
-var anteRior2;
-var proXimo2;
-var anteRior3;
-var proXimo3;
-var anteRior4;
-var proXimo4;
-
-
-let subMenus = [];
-class SubMenu {
-  constructor() {
-    this.id = tempId;
-    this.status = tempStatus;
-  }
-}
 
 let bolhas = [];
 class Bolha {
@@ -65,110 +49,60 @@ class Bolha {
   }
 }
 
-//Funções de visualização dos submenus.
-function ir0() {
-  subMenu0.style('display', 'grid');
-  subMenu1.style('display', 'none');
-  subMenu2.style('display', 'none');
-  subMenu3.style('display', 'none');
-  subMenu4.style('display', 'none');
+function irArte () {
+  pannel0.style("display", "block");
+  pannel1.style("display", "none");
+  pannel2.style("display", "none");
+  pannel3.style("display", "none");
 }
 
-function ir1() {
-  subMenu0.style('display', 'none');
-  subMenu1.style('display', 'grid');
-  subMenu2.style('display', 'none');
-  subMenu3.style('display', 'none');
-  subMenu4.style('display', 'none');
+function irPesq () {
+  pannel0.style("display", "none");
+  pannel1.style("display", "block");
+  pannel2.style("display", "none");
+  pannel3.style("display", "none");
 }
 
-function ir2() {
-  subMenu0.style('display', 'none');
-  subMenu1.style('display', 'none');
-  subMenu2.style('display', 'grid');
-  subMenu3.style('display', 'none');
-  subMenu4.style('display', 'none');
+function irDesign () {
+  pannel0.style("display", "none");
+  pannel1.style("display", "none");
+  pannel2.style("display", "block");
+  pannel3.style("display", "none");
 }
 
-function ir3() {
-  subMenu0.style('display', 'none');
-  subMenu1.style('display', 'none');
-  subMenu2.style('display', 'none');
-  subMenu3.style('display', 'grid');
-  subMenu4.style('display', 'none');
+function irContato () {
+  pannel0.style("display", "none");
+  pannel1.style("display", "none");
+  pannel2.style("display", "none");
+  pannel3.style("display", "block");
 }
 
-function ir4() {
-  subMenu0.style('display', 'none');
-  subMenu1.style('display', 'none');
-  subMenu2.style('display', 'none');
-  subMenu3.style('display', 'none');
-  subMenu4.style('display', 'grid');
-}
-
-//Mudar de cor do texto para vermelho.
-function highlight() {
-    this.style('color', 'red');
-}
-
-//Mudar de cor do texto para preto.
-function unhighlight() {
-    this.style('color', 'black');
-}
-
-let canvas;
-
-//Código Geral
-//function preload() {} | windowWidth, windowHeight
 function setup() {
-  canvas = createCanvas(windowWidth/2, windowHeight * 0.95);
-  canvas.parent("canv");
+canvas = createCanvas(935, 935);
+canvas.parent("canv");
 
-  subTitulos = selectAll('h2');
+botao0 = select("#butt0");
+botao1 = select("#butt1");
+botao2 = select("#butt2");
+botao3 = select("#butt3");
 
-  for (var i = 0; i < subTitulos.length; i++) {
-    subTitulos[i].mouseOver(highlight);
-    subTitulos[i].mouseOut(unhighlight);
-  }
+pannel0 = select("#infoPannel0");
+pannel1 = select("#infoPannel1");
+pannel2 = select("#infoPannel2");
+pannel3 = select("#infoPannel3");
 
-  subMenu0 = select('#Submenu0');
-  subMenu1 = select('#Submenu1');
-  subMenu2 = select('#Submenu2');
-  subMenu3 = select('#Submenu3');
-  subMenu3 = select('#Submenu4');
+botao0.mousePressed(irArte);
+botao1.mousePressed(irPesq);
+botao2.mousePressed(irDesign);
+botao3.mousePressed(irContato);
 
+for (let i = 0; i < 13; i++) {
+  let x = random(width);
+  let y = random(height);
+  let r = random(50) * i + random(5,10);
+  bolhas[i] = new Bolha(x, y, r);
+}
 
-
-  anteRior0 = select('#anterior0') //#
-  proXimo0 = select('#proximo0');
-  anteRior1 = select('#anterior1');
-  proXimo1 = select('#proximo1'); //#
-  anteRior2 = select('#anterior2');
-  proXimo2 = select('#proximo2');
-  anteRior3 = select('#anterior3');
-  proXimo3 = select('#proximo3');
-  anteRior4 = select('#anterior4');
-  proXimo4 = select('#proximo4');
-
-  anteRior0.mousePressed(ir4); //*
-  proXimo0.mousePressed(ir1);
-  anteRior1.mousePressed(ir0);
-  proXimo1.mousePressed(ir2); //*
-  anteRior2.mousePressed(ir1); //*
-  proXimo2.mousePressed(ir3); //*
-  anteRior3.mousePressed(ir2); //*
-  proXimo3.mousePressed(ir4); //*
-  anteRior4.mousePressed(ir3); //*
-  proXimo4.mousePressed(ir0); //*
-
-
-
-  for (let i = 0; i < 13; i++) {
-    let x = random(width);
-    let y = random(height);
-    let r = random(50) * i + random(5,10);
-    bolhas[i] = new Bolha(x, y, r);
-  }
 }
 
 function draw() {

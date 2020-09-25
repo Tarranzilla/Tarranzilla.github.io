@@ -1,122 +1,162 @@
+body {
+  font-family: 'Catamaran', sans-serif;
+  padding: 1rem;
+  margin: 0;
+}
 
 h1 {
-    font-size: 2.5rem;
-    z-index: 1;
-  }
+  font-family: 'Catamaran', sans-serif;
+  font-weight: bold;
+  font-size: 2.8rem;
+}
 
 h2 {
-    font-size: 1.5rem;
-    z-index: 1;
-  }
+  font-size: 1.8rem;
+}
 
-  h3 {
-    font-size: 1rem;
-  }
+h3 {
+  font-size: 1.4rem;
+}
 
 p {
-    font-size: 1rem;
-    z-index: 1;
-  }
-
-body {
-    padding: 0.5rem;
-    margin: 0.5rem;
-    font-family: sans-serif;
-    z-index: 1;
-  }
-
-  button {
-        display: inline-block;
-        background-color: transparent;
-        border-radius: 1rem;
-        border: 0.3rem double black;
-        color: black;
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 0.5rem;
-        width: 10rem;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 0.5rem;
-  }
-
-  button:hover {
-  background-color: lightgreen;
+  color: white;
+  font-size: 1.8rem;
+  text-align: justify;
+  padding: 5rem;
+  font-weight: lighter;
 }
 
-  iframe {
-  border-radius: 1rem;
-  padding-bottom: 2rem;
+button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  color: black;
+  font-size: 1.8rem;
+  text-align: justify;
+  font-family: 'Catamaran', sans-serif;
+  cursor: pointer;
 }
 
-.grid-container {
+button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.master-grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-column-gap: 0.2rem;
-  padding: 0.2rem;
-}
+  grid-template-columns: repeat(18, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-areas:
 
-.image-container {
-  display: flex;
-  padding: 0.5rem;
-}
-
-.coluna {
-  flex: 20%;
-  max-width: 30%;
-  padding: 0 4px;
-}
-
-.imageItem {
-  height: 10rem;
-  width: auto;
-  margin-top: 1rem;
-  vertical-align: middle;
+      "ti ti ti ti ti ti ti ti ti .  .  .  .  .  .  .  .  . "
+      "ca ca ca ca ca ca ca ca ca in in in in in in in in in"
+      "ca ca ca ca ca ca ca ca ca in in in in in in in in in"
+      "ca ca ca ca ca ca ca ca ca in in in in in in in in in"
+      "ca ca ca ca ca ca ca ca ca in in in in in in in in in"
+      "ca ca ca ca ca ca ca ca ca in in in in in in in in in"
+      "ca ca ca ca ca ca ca ca ca in in in in in in in in in"
+      "ca ca ca ca ca ca ca ca ca in in in in in in in in in"
+      "ca ca ca ca ca ca ca ca ca in in in in in in in in in"
+      "ca ca ca ca ca ca ca ca ca in in in in in in in in in"
+      "sa sa sa sb sb sc sc sd sd .  .  .  .  .  .  .  .  . ";
 }
 
 .grid-item {
-  margin-top: 8px;
-  vertical-align: middle;
+
 }
 
-.item-header {
+#containerTitulo {
+    grid-area: ti;
+    padding: 1rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+#canv {
+  grid-area: ca;
+  border-style: solid none none solid;
+}
+
+#infoPannel0 {
+  grid-area: in;
+  background-color: black;
+  text-align: center;
+  border-radius: 0rem 1rem 1rem 0rem;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+}
+
+#infoPannel1 {
+  display: none;
+  grid-area: in;
+  background-color: black;
+  text-align: center;
+  border-radius: 0rem 1rem 1rem 0rem;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+}
+
+#infoPannel2 {
+  display: none;
+  grid-area: in;
+  background-color: black;
+  text-align: center;
+  border-radius: 0rem 1rem 1rem 0rem;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+}
+
+#infoPannel3 {
+  display: none;
+  grid-area: in;
+  background-color: black;
+  text-align: center;
+  border-radius: 0rem 1rem 1rem 0rem;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+}
+
+#submenu0 {
+  grid-area: sa;
+  border-style: solid none solid solid;
+  border-radius: 0rem 0rem 0rem 1rem;
+  padding-left: 1rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Catamaran', sans-serif;
 }
 
-.cont {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  margin-top: : 0;
-  padding: 0;
+#submenu1 {
+  grid-area: sb;
+  border-style: solid none solid dashed;
+  padding-left: 1rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Catamaran', sans-serif;
 }
 
-#c1 {
-  grid-row-start: 1;
-  grid-row-end: 3;
+#submenu2 {
+  grid-area: sc;
+  border-style: solid none solid dashed;
+  padding-left: 1rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Catamaran', sans-serif;
 }
 
-
-#Submenu0 {
-
-}
-
-#Submenu1 {
-  display: none;
-}
-
-#Submenu2 {
-  display: none;
-}
-
-#Submenu3 {
-  display: none;
-}
-
-#Submenu4 {
-  display: none;
+#submenu3 {
+  grid-area: sd;
+  border-radius: 0rem 0rem 1rem 0rem;
+  border-style: solid solid solid dashed;
+  padding-left: 1rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Catamaran', sans-serif;
 }
