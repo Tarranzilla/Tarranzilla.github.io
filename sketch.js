@@ -3,12 +3,12 @@ let canvas;
 let botao0;
 let botao1;
 let botao2;
-let botao3;
+//let botao3;
 
 let pannel0;
 let pannel1;
 let pannel2;
-let pannel3;
+//let pannel3;
 
 
 let bolhas = [];
@@ -84,17 +84,17 @@ canvas.parent("canv");
 botao0 = select("#butt0");
 botao1 = select("#butt1");
 botao2 = select("#butt2");
-botao3 = select("#butt3");
+//botao3 = select("#butt3");
 
 pannel0 = select("#infoPannel0");
 pannel1 = select("#infoPannel1");
 pannel2 = select("#infoPannel2");
-pannel3 = select("#infoPannel3");
+//pannel3 = select("#infoPannel3");
 
 botao0.mousePressed(irArte);
 botao1.mousePressed(irPesq);
 botao2.mousePressed(irDesign);
-botao3.mousePressed(irContato);
+//botao3.mousePressed(irContato);
 
 for (let i = 0; i < 13; i++) {
   let x = random(width);

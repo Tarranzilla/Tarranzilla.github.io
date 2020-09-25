@@ -59,7 +59,7 @@ button:hover {
       "ca ca ca ca ca ca ca ca ca in in in in in in in in in"
       "ca ca ca ca ca ca ca ca ca in in in in in in in in in"
       "ca ca ca ca ca ca ca ca ca in in in in in in in in in"
-      "sa sa sa sb sb sc sc sd sd .  .  .  .  .  .  .  .  . ";
+      "sa sa sa sb sb sb sc sc sc .  .  .  .  .  .  .  .  . ";
 }
 
 .grid-item {
@@ -142,7 +142,8 @@ button:hover {
 
 #submenu2 {
   grid-area: sc;
-  border-style: solid none solid dashed;
+  border-style: solid solid solid dashed;
+  border-radius: 0rem 0rem 1rem 0rem;
   padding-left: 1rem;
   display: flex;
   align-content: center;
@@ -150,7 +151,7 @@ button:hover {
   font-family: 'Catamaran', sans-serif;
 }
 
-#submenu3 {
+/*#submenu3 {
   grid-area: sd;
   border-radius: 0rem 0rem 1rem 0rem;
   border-style: solid solid solid dashed;
