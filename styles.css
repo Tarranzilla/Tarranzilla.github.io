@@ -127,6 +127,18 @@ button:hover {
   /*flex-direction: column;*/
 }
 
+#subcontent10 {
+
+}
+
+#subcontent11 {
+  display: none;
+}
+
+#subcontent12 {
+  display: none;
+}
+
 #infoPannel2 {
   display: none;
   grid-area: in;

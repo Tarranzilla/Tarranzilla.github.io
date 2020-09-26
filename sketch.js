@@ -22,6 +22,10 @@ let sub2_btn0;
 let subcontent00;
 let subcontent01;
 
+let subcontent10;
+let subcontent11;
+let subcontent12;
+
 
 
 let bolhas = [];
@@ -100,6 +104,24 @@ function irSubContent01() {
   subcontent01.style("display", "block");
 }
 
+function irSubContent10() {
+  subcontent10.style("display", "block");
+  subcontent11.style("display", "none");
+  subcontent12.style("display", "none");
+}
+
+function irSubContent11() {
+  subcontent10.style("display", "none");
+  subcontent11.style("display", "block");
+  subcontent12.style("display", "none");
+}
+
+function irSubContent12() {
+  subcontent10.style("display", "none");
+  subcontent11.style("display", "none");
+  subcontent12.style("display", "block");
+}
+
 function setup() {
 canvas = createCanvas(935, 935);
 canvas.parent("canv");
@@ -126,6 +148,10 @@ sub2_btn0 = select("sub2_btn0");
 subcontent00 = select("#subcontent00");
 subcontent01 = select("#subcontent01");
 
+subcontent10 = select("#subcontent10");
+subcontent11 = select("#subcontent11");
+subcontent12 = select("#subcontent12");
+
 botao0.mousePressed(irSou);
 botao1.mousePressed(irFaco);
 botao2.mousePressed(irCont);
@@ -133,6 +159,11 @@ botao2.mousePressed(irCont);
 
 sub0_btn0.mousePressed(irSubContent00);
 sub0_btn1.mousePressed(irSubContent01);
+
+sub1_btn0.mousePressed(irSubContent10);
+sub1_btn1.mousePressed(irSubContent11);
+sub1_btn2.mousePressed(irSubContent12);
+
 
 for (let i = 0; i < 13; i++) {
   let x = random(width);
