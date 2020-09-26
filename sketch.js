@@ -13,6 +13,16 @@ let pannel2;
 let sub0_btn0;
 let sub0_btn1;
 
+let sub1_btn0;
+let sub1_btn1;
+let sub1_btn2;
+
+let sub2_btn0;
+
+let subcontent00;
+let subcontent01;
+
+
 
 let bolhas = [];
 class Bolha {
@@ -80,6 +90,16 @@ function irContato () {
   //pannel3.style("display", "block");
 }
 
+function irSubContent00() {
+  subcontent00.style("display", "block");
+  subcontent01.style("display", "none");
+}
+
+function irSubContent01() {
+  subcontent00.style("display", "none");
+  subcontent01.style("display", "block");
+}
+
 function setup() {
 canvas = createCanvas(935, 935);
 canvas.parent("canv");
@@ -97,10 +117,22 @@ pannel2 = select("#infoPannel2");
 sub0_btn0 = select("#sub0_btn0");
 sub0_btn1 = select("#sub0_btn1");
 
+sub1_btn0 = select("#sub1_btn0");
+sub1_btn1 = select("#sub1_btn1");
+sub1_btn2 = select("#sub1_btn2");
+
+sub2_btn0 = select("sub2_btn0");
+
+subcontent00 = select("#subcontent00");
+subcontent01 = select("#subcontent01");
+
 botao0.mousePressed(irSou);
 botao1.mousePressed(irFaco);
 botao2.mousePressed(irCont);
 //botao3.mousePressed(irContato);
+
+sub0_btn0.mousePressed(irSubContent00);
+sub0_btn1.mousePressed(irSubContent01);
 
 for (let i = 0; i < 13; i++) {
   let x = random(width);
