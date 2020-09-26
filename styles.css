@@ -66,6 +66,13 @@ button:hover {
 
 .subBtn:hover {
   background-color: #4CAF50; /* Green */
+}
+
+#sub0_btn1:hover{
+  border-radius: 0rem 1rem 0rem 0rem;
+}
+
+#sub1_btn2:hover {
   border-radius: 0rem 1rem 0rem 0rem;
 }
 
@@ -104,6 +111,7 @@ button:hover {
 #canv {
   grid-area: ca;
   border-style: solid none none solid;
+  background-color: red;
 }
 
 #infoPannel0 {
@@ -173,6 +181,10 @@ button:hover {
 
 .imageitem:hover {
   background-color: #4CAF50; /* Green */
+}
+
+#imageitem23:hover{
+    border-radius: 0rem 0rem 1rem 0rem;
 }
 
 #imageitem20 {

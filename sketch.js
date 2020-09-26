@@ -1,4 +1,5 @@
 let canvas;
+let canv;
 
 let botao0;
 let botao1;
@@ -70,28 +71,27 @@ function irSou () {
   pannel0.style("display", "block");
   pannel1.style("display", "none");
   pannel2.style("display", "none");
-  //pannel3.style("display", "none");
+  canv.style("background-color", "red");
+  //background(255,0,0);
+  stroke(255, 4, 0);
 }
 
 function irFaco () {
   pannel0.style("display", "none");
   pannel1.style("display", "block");
   pannel2.style("display", "none");
-  //pannel3.style("display", "none");
+  canv.style("background-color", "blue");
+  //background(0,255,0);
+  stroke(25, 204, 0);
 }
 
 function irCont () {
   pannel0.style("display", "none");
   pannel1.style("display", "none");
   pannel2.style("display", "block");
-  //pannel3.style("display", "none");
-}
-
-function irContato () {
-  pannel0.style("display", "none");
-  pannel1.style("display", "none");
-  pannel2.style("display", "none");
-  //pannel3.style("display", "block");
+  canv.style("background-color", "green");
+  //background(0,0,255);
+  stroke(255, 204, 0);
 }
 
 function irSubContent00() {
@@ -123,8 +123,10 @@ function irSubContent12() {
 }
 
 function setup() {
-canvas = createCanvas(935, 935);
+canvas = createCanvas(windowWidth/2.05, 935);
 canvas.parent("canv");
+
+canv = select("#canv");
 
 botao0 = select("#butt0");
 botao1 = select("#butt1");
@@ -152,9 +154,6 @@ subcontent10 = select("#subcontent10");
 subcontent11 = select("#subcontent11");
 subcontent12 = select("#subcontent12");
 
-botao0.mousePressed(irSou);
-botao1.mousePressed(irFaco);
-botao2.mousePressed(irCont);
 //botao3.mousePressed(irContato);
 
 sub0_btn0.mousePressed(irSubContent00);
@@ -175,8 +174,13 @@ for (let i = 0; i < 13; i++) {
 }
 
 function draw() {
-  background(255);
+  clear();
+  strokeWeight(3);
+  botao0.mousePressed(irSou);
+  botao1.mousePressed(irFaco);
+  botao2.mousePressed(irCont);
 
+  //if () {}
   for (let b of bolhas) {
     b.move();
     b.show();
