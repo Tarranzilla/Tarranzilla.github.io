@@ -46,7 +46,6 @@ button {
 }
 
 button:hover {
-  background-color: #4CAF50; /* Green */
   color: white;
 }
 
@@ -68,12 +67,48 @@ button:hover {
   background-color: #4CAF50; /* Green */
 }
 
-#sub0_btn1:hover{
+#sub0_btn0 {
+  border: 2;
+  background-color: red;
+}
+
+#sub0_btn1 {
+  border: 2;
+}
+
+#sub0_btn0:hover {
+    border-radius: 0rem 0rem 0rem 0rem;
+    background-color: LightCoral;
+}
+
+#sub0_btn1:hover {
   border-radius: 0rem 1rem 0rem 0rem;
+  background-color: LightCoral;
+}
+
+#sub1_btn0 {
+  background-color: blue;
+}
+
+#sub1_btn2 {
+  border-radius: 0rem 1rem 0rem 0rem;
+}
+
+#sub1_btn0:hover {
+  background-color: CornflowerBlue;
+}
+
+#sub1_btn1:hover {
+  background-color: CornflowerBlue;
 }
 
 #sub1_btn2:hover {
   border-radius: 0rem 1rem 0rem 0rem;
+  background-color: CornflowerBlue;
+}
+
+#sub2_btn0 {
+  background-color: green;
 }
 
 .master-grid-container {
@@ -110,7 +145,7 @@ button:hover {
 
 #canv {
   grid-area: ca;
-  border-style: solid none none solid;
+  border-style: solid solid none solid;
   background-color: red;
 }
 
@@ -241,34 +276,74 @@ button:hover {
 
 #submenu0 {
   grid-area: sa;
-  border-style: solid none solid solid;
-  border-radius: 0rem 0rem 0rem 1rem;
-  padding-left: 1rem;
+
   display: flex;
   align-content: center;
   justify-content: center;
+
+  border-style: solid none solid solid;
+  border-radius: 0rem 0rem 0rem 1rem;
+  padding-left: 0rem;
+
+
   font-family: 'Catamaran', sans-serif;
+  font-weight: 900;
+}
+
+#butt0 {
+  font-weight: 900;
+}
+
+#butt0:hover{
+  background-color: red;
+  color: red;
 }
 
 #submenu1 {
   grid-area: sb;
-  border-style: solid none solid dashed;
-  padding-left: 1rem;
+
   display: flex;
   align-content: center;
   justify-content: center;
+
+  border-style: solid none solid dashed;
+  padding-left: 0rem;
+
   font-family: 'Catamaran', sans-serif;
+  font-weight: 900;
+}
+
+#butt1 {
+  font-weight: 900;
+}
+
+#butt1:hover{
+  background-color: blue;
+  color: blue;
 }
 
 #submenu2 {
   grid-area: sc;
-  border-style: solid solid solid dashed;
-  border-radius: 0rem 0rem 1rem 0rem;
-  padding-left: 1rem;
+
   display: flex;
   align-content: center;
   justify-content: center;
+
+  border-style: solid solid solid dashed;
+  border-radius: 0rem 0rem 1rem 0rem;
+  padding-left: 0rem;
+
   font-family: 'Catamaran', sans-serif;
+  font-weight: 900;
+}
+
+#butt2 {
+  font-weight: 900;
+}
+
+#butt2:hover{
+  background-color: green;
+  color: green;
 }
 
 /*#submenu3 {

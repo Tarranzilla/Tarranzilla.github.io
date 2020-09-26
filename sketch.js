@@ -27,6 +27,10 @@ let subcontent10;
 let subcontent11;
 let subcontent12;
 
+let submenu0;
+let submenu1;
+let submenu2;
+
 
 
 let bolhas = [];
@@ -72,6 +76,15 @@ function irSou () {
   pannel1.style("display", "none");
   pannel2.style("display", "none");
   canv.style("background-color", "red");
+
+  botao0.style("background-color", "red");
+  botao1.style("background-color", "white");
+  botao2.style("background-color", "white");
+
+  submenu0.style("border-style", "none none solid solid");
+  submenu1.style("border-style", "solid none solid dashed");
+  submenu2.style("border-style", "solid solid solid none");
+
   //background(255,0,0);
   stroke(255, 4, 0);
 }
@@ -81,6 +94,15 @@ function irFaco () {
   pannel1.style("display", "block");
   pannel2.style("display", "none");
   canv.style("background-color", "blue");
+
+  botao0.style("background-color", "white");
+  botao1.style("background-color", "blue");
+  botao2.style("background-color", "white");
+
+  submenu0.style("border-style", "solid none solid solid");
+  submenu1.style("border-style", "none none solid dashed");
+  submenu2.style("border-style", "none solid solid dashed");
+
   //background(0,255,0);
   stroke(25, 204, 0);
 }
@@ -90,6 +112,15 @@ function irCont () {
   pannel1.style("display", "none");
   pannel2.style("display", "block");
   canv.style("background-color", "green");
+
+  botao0.style("background-color", "white");
+  botao1.style("background-color", "white");
+  botao2.style("background-color", "green");
+
+  submenu0.style("border-style", "solid none solid solid");
+  submenu1.style("border-style", "solid none solid none");
+  submenu2.style("border-style", "none solid solid dashed");
+
   //background(0,0,255);
   stroke(255, 204, 0);
 }
@@ -97,29 +128,53 @@ function irCont () {
 function irSubContent00() {
   subcontent00.style("display", "block");
   subcontent01.style("display", "none");
+
+  sub0_btn0.style("background-color", "red");
+  sub0_btn1.style("background-color", "black");
+  sub0_btn1.style("border-radius", "0rem 1rem 0rem 0rem");
+
 }
 
 function irSubContent01() {
   subcontent00.style("display", "none");
   subcontent01.style("display", "block");
+
+  sub0_btn0.style("background-color", "black");
+  sub0_btn1.style("background-color", "red");
+
 }
 
 function irSubContent10() {
   subcontent10.style("display", "block");
   subcontent11.style("display", "none");
   subcontent12.style("display", "none");
+
+  sub1_btn0.style("background-color", "blue");
+  sub1_btn1.style("background-color", "black");
+  sub1_btn2.style("background-color", "black");
+
 }
 
 function irSubContent11() {
   subcontent10.style("display", "none");
   subcontent11.style("display", "block");
   subcontent12.style("display", "none");
+
+  sub1_btn0.style("background-color", "black");
+  sub1_btn1.style("background-color", "blue");
+  sub1_btn2.style("background-color", "black");
+
 }
 
 function irSubContent12() {
   subcontent10.style("display", "none");
   subcontent11.style("display", "none");
   subcontent12.style("display", "block");
+
+  sub1_btn0.style("background-color", "black");
+  sub1_btn1.style("background-color", "black");
+  sub1_btn2.style("background-color", "blue");
+
 }
 
 function setup() {
@@ -155,6 +210,10 @@ subcontent11 = select("#subcontent11");
 subcontent12 = select("#subcontent12");
 
 //botao3.mousePressed(irContato);
+
+submenu0 = select("#submenu0");
+submenu1 = select("#submenu1");
+submenu2 = select("#submenu2");
 
 sub0_btn0.mousePressed(irSubContent00);
 sub0_btn1.mousePressed(irSubContent01);
