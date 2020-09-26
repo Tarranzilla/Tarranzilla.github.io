@@ -153,6 +153,36 @@ button:hover {
   display: none;
 }
 
+.design_projects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+  border-color: white;
+  border-style: none none solid none;
+}
+
+#design_project_00 {
+    border-style: solid none solid none;
+}
+
+.design_projects > img {
+  height: 10rem;
+  width: 10rem;
+
+}
+
+.design_projects_desc {
+  display: flex;
+  flex-direction: column;
+}
+
+#research_project_00 {
+    border-style: solid none solid none;
+}
+
 #infoPannel2 {
   display: none;
   grid-area: in;
