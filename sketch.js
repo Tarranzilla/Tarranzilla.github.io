@@ -230,7 +230,7 @@ sub1_btn1.mousePressed(irSubContent11);
 sub1_btn2.mousePressed(irSubContent12);
 
 
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i < 13; i++) {
   let x = random(width);
   let y = random(height);
   let r = random(50) * i + random(5,10);
