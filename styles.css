@@ -44,6 +44,7 @@ button {
   text-align: justify;
   font-family: 'Catamaran', sans-serif;
   cursor: pointer;
+  transition-duration: 0.4s;
 }
 
 button:hover {
@@ -351,6 +352,7 @@ button:hover {
 #butt0 {
   font-weight: 900;
   border-radius: 0rem 0rem 0rem 1rem;
+  text-align: center;
 }
 
 #butt0:hover{
@@ -374,6 +376,7 @@ button:hover {
 
 #butt1 {
   font-weight: 900;
+  text-align: center;
 }
 
 #butt1:hover{
@@ -399,6 +402,7 @@ button:hover {
 #butt2 {
   font-weight: 900;
   border-radius: 0rem 0rem 1rem 0rem;
+  text-align: center;
 }
 
 #butt2:hover{
