@@ -178,8 +178,14 @@ function irSubContent12() {
 
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight/4);
+}
+
 function setup() {
-canvas = createCanvas(windowWidth/2.05, 935);
+//canvas = createCanvas(windowWidth/2.05, windowHeight/1.5);
+canvas = createCanvas(windowWidth, windowHeight);
+
 canvas.parent("canv");
 
 canv = select("#canv");

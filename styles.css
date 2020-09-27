@@ -6,7 +6,7 @@ body {
 
 h1 {
   font-family: 'Catamaran', sans-serif;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 2.8rem;
 }
 
@@ -48,6 +48,12 @@ button {
 button:hover {
   color: white;
 }
+
+/*.scrollWindow {
+  display: block;
+  height: 90%;
+  overflow: scroll;
+} tentativa de scroll na div */
 
 .subheader {
   display: flex;
@@ -125,7 +131,7 @@ button:hover {
   font-weight: 900;
   font-size: 2.4rem;
 }
-
+/*
 .master-grid-container {
   display: grid;
   grid-template-columns: repeat(18, 1fr);
@@ -143,6 +149,29 @@ button:hover {
       "ca ca ca ca ca ca ca ca ca in in in in in in in in in"
       "ca ca ca ca ca ca ca ca ca in in in in in in in in in"
       "sa sa sa sb sb sb sc sc sc .  .  .  .  .  .  .  .  . ";
+}*/
+
+.master-grid-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-areas:
+
+      "ti ti ti ti ti ti ti ti ti"
+      "ca ca ca ca ca ca ca ca ca"
+      "ca ca ca ca ca ca ca ca ca"
+      "ca ca ca ca ca ca ca ca ca"
+      "ca ca ca ca ca ca ca ca ca"
+      "sa sa sa sb sb sb sc sc sc"
+      "in in in in in in in in in"
+      "in in in in in in in in in"
+      "in in in in in in in in in"
+      "in in in in in in in in in"
+      "in in in in in in in in in"
+      "in in in in in in in in in"
+      "in in in in in in in in in"
+      "in in in in in in in in in"
+      "in in in in in in in in in";
 }
 
 .grid-item {
@@ -211,16 +240,18 @@ button:hover {
   padding: 1rem;
   margin: 1rem;
   border-color: white;
-  border-style: none none solid none;
+  border-style: solid solid solid solid;
+  border-radius: 2rem 2rem 2rem 2rem;
 }
 
 #design_project_00 {
-    border-style: solid none solid none;
+    border-style: solid solid solid solid;
 }
 
 .design_projects > img {
-  height: 10rem;
-  width: 10rem;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 2rem 2rem 2rem 2rem;
 
 }
 
@@ -230,7 +261,7 @@ button:hover {
 }
 
 #research_project_00 {
-    border-style: solid none solid none;
+    border-style: solid solid solid solid;
 }
 
 #infoPannel2 {
@@ -364,6 +395,8 @@ button:hover {
   background-color: green;
   color: green;
 }
+
+
 
 /*#submenu3 {
   grid-area: sd;
