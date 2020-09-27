@@ -23,7 +23,7 @@ p {
   color: white;
   font-size: 1.8rem;
   text-align: justify;
-  padding: 5rem;
+  padding: 1rem;
   font-weight: lighter;
 }
 
@@ -39,7 +39,7 @@ button {
   border: none;
   background: transparent;
   color: black;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   text-align: justify;
   font-family: 'Catamaran', sans-serif;
   cursor: pointer;
@@ -70,10 +70,14 @@ button:hover {
 #sub0_btn0 {
   border: 2;
   background-color: red;
+  font-weight: 900;
+  font-size: 2.4rem;
 }
 
 #sub0_btn1 {
   border: 2;
+  font-weight: 900;
+  font-size: 2.4rem;
 }
 
 #sub0_btn0:hover {
@@ -88,10 +92,19 @@ button:hover {
 
 #sub1_btn0 {
   background-color: blue;
+  font-weight: 900;
+  font-size: 2.4rem;
+}
+
+#sub1_btn1 {
+  font-weight: 900;
+  font-size: 2.4rem;
 }
 
 #sub1_btn2 {
   border-radius: 0rem 1rem 0rem 0rem;
+  font-weight: 900;
+  font-size: 2.4rem;
 }
 
 #sub1_btn0:hover {
@@ -109,6 +122,8 @@ button:hover {
 
 #sub2_btn0 {
   background-color: green;
+  font-weight: 900;
+  font-size: 2.4rem;
 }
 
 .master-grid-container {
@@ -261,7 +276,11 @@ button:hover {
 }
 
 #imageitem22 {
-  border-style: none solid none none;
+  border-style: none solid solid none;
+}
+
+#imageitem23 {
+  border-style: none solid solid none;
 }
 
 /*#infoPannel3 {
