@@ -298,8 +298,15 @@ button:hover {
 
 .arte-column {
   -ms-flex: 50%; /* IE10 */
-  flex: 100%;
+  flex: 50%;
   max-width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+  .arte-column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 .video-item {
