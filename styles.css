@@ -51,11 +51,20 @@ button:hover {
   color: white;
 }
 
-/*.scrollWindow {
-  display: block;
-  height: 90%;
-  overflow: scroll;
-} tentativa de scroll na div */
+.scrollWindow {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+}
 
 .subheader {
   display: flex;
@@ -246,9 +255,9 @@ button:hover {
   justify-content: center;
   padding: 1rem;
   margin: 1rem;
-  border-color: white;
   border-style: solid solid solid solid;
   border-radius: 2rem 2rem 2rem 2rem;
+  background-color: blue;
 }
 
 #design_project_00 {
@@ -302,19 +311,17 @@ button:hover {
   max-width: 70%;
 }
 
-@media screen and (max-width: 600px) {
-  .arte-column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
 .video-item {
   border-radius: 1rem
 }
 
 .arte-item {
   border-radius: 1rem;
+}
+
+.sub-desc {
+padding-left: 5rem;
+padding-right: 5rem;
 }
 
 
