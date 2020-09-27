@@ -253,11 +253,12 @@ button:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 3rem;
   margin: 1rem;
   border-style: solid solid solid solid;
-  border-radius: 2rem 2rem 2rem 2rem;
-  background-color: blue;
+  border-radius: 100rem 100rem 100rem 100rem;
+  background-color: black;
+  border-color: white;
 }
 
 #design_project_00 {
@@ -267,7 +268,8 @@ button:hover {
 .design_projects > img {
   height: 15rem;
   width: 15rem;
-  border-radius: 2rem 2rem 2rem 2rem;
+  border-radius: 15rem 15rem 15rem 15rem;
+  padding: 0rem;
 
 }
 
