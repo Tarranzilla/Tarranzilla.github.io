@@ -287,6 +287,30 @@ button:hover {
   grid-auto-rows: minmax(260px, auto); /* arrumar esse 260px */
 }
 
+.arte-container-row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.arte-column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 100%;
+  max-width: 70%;
+}
+
+.video-item {
+  border-radius: 1rem
+}
+
+.arte-item {
+  border-radius: 1rem;
+}
+
+
 .imageitem {
   width: 100%;
   height: 100%;
