@@ -209,8 +209,8 @@ button:hover {
   /*flex-direction: column;*/
 }
 
-#subcontent00 {
-
+#subcontent00 > p {
+  text-align: center;
 }
 
 #subcontent01 {
