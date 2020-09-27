@@ -88,6 +88,14 @@ function irSou () {
 
   //background(255,0,0);
   stroke(255, 4, 0);
+
+  for (let i = 0; i < 13; i++) {
+    let x = random(width);
+    let y = random(height);
+    let r = random(50) * i + random(5,10);
+    bolhas[i] = new Bolha(x, y, r);
+  }
+
 }
 
 function irFaco () {
@@ -106,6 +114,14 @@ function irFaco () {
 
   //background(0,255,0);
   stroke(25, 204, 0);
+
+  for (let i = 0; i < 13; i++) {
+    let x = random(width);
+    let y = random(height);
+    let r = random(50) * i + random(5,10);
+    bolhas[i] = new Bolha(x, y, r);
+  }
+
 }
 
 function irCont () {
@@ -124,6 +140,14 @@ function irCont () {
 
   //background(0,0,255);
   stroke(255, 204, 0);
+
+  for (let i = 0; i < 13; i++) {
+    let x = random(width);
+    let y = random(height);
+    let r = random(50) * i + random(5,10);
+    bolhas[i] = new Bolha(x, y, r);
+  }
+
 }
 
 function irSubContent00() {
@@ -246,7 +270,6 @@ function draw() {
   botao1.mousePressed(irFaco);
   botao2.mousePressed(irCont);
 
-  //if () {}
   for (let b of bolhas) {
     b.move();
     b.show();
