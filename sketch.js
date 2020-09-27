@@ -184,7 +184,7 @@ function windowResized() {
 
 function setup() {
 //canvas = createCanvas(windowWidth/2.05, windowHeight/1.5);
-canvas = createCanvas(windowWidth, windowHeight);
+canvas = createCanvas(windowWidth, windowHeight/1.6);
 
 canvas.parent("canv");
 
